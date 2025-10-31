@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
   "dev": "vite",
-  "build": "node build.js",
-  "preview": "vite preview"
+  "build": "npx vite build",
+  "preview": "vite preview",
+  "postinstall": "chmod +x node_modules/.bin/* || true"
+
 },
   "dependencies": {
     "react": "^18.3.1",
